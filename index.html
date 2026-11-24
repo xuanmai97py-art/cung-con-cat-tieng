@@ -948,8 +948,7 @@
         ...(allFlagged.length > 0 ? allFlagged.map((x) => `  * ${x}`) : ["  * Chưa ghi nhận mục lệch chuẩn"]),
         ...(unsureList.length > 0 ? [`- Mục phụ huynh còn 'Không chắc' (${unsureList.length} câu)`] : [])
       ];
-      document.getElementById("r-doctor-summary").value = summaryLines.join("
-");
+      document.getElementById("r-doctor-summary").value = summaryLines.join("\n");
     }
 
     function putList(id, arr) {
